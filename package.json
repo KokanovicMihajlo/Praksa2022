@@ -1,0 +1,23 @@
+{
+  "name": "praksa 2022",
+  "version": "2.1.0",
+  "description": "This project is meant to be a kind of template to start working with Cucumber and Cypress just cloning the project.",
+  "main": "index.js",
+  "scripts": {
+    "test": "cypress open",
+    "start": "cypress run",
+    "dev": "cypress open --config-file dev.config.js"
+  },
+  "keywords": [
+    "cypress"
+  ],
+  "author": "cucumber",
+  "license": "ISC",
+  "devDependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^13.0.2",
+    "@bahmutov/cypress-esbuild-preprocessor": "^2.1.5",
+    "cypress": "^10.9.0",
+    "esbuild": "^0.15.10",
+    "multiple-cucumber-html-reporter": "^3.0.1"
+  }
+}
