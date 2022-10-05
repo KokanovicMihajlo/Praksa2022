@@ -16,5 +16,4 @@ Then('I shoud see necessary properties',()=>{
   cy.get('[data-role=card-title]').should('contain','Current Account')
   cy.get('[data-role=card-sub-title]').should('contain','BG23STSA93000005794456')
   cy.get('[data-role=bb-amount-value__amount]').should('contain','1 234', ',', '23', 'BGN')
-
 })
