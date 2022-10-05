@@ -1,4 +1,4 @@
-Feature: Curent Login
+Feature: List current accounts
 
     As a user I want to see my current account list
 
