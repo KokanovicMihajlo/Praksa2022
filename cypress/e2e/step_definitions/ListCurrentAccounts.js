@@ -5,7 +5,7 @@ import {
     Then,
   } from "@badeball/cypress-cucumber-preprocessor"
   
-When('I am on My Products Page',()=>{
+When('I am on My Products page',()=>{
   cy.get('[data-role=headings]').should('contain', 'My products')
 })
 
