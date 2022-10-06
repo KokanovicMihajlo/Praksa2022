@@ -10,6 +10,7 @@ module.exports = defineConfig({
   extends: './cypress.env.json',
   env: {
     "loginPage": "/otp-mastercopy-retail-app/redirect",
+    "transactionPage":"https://dev.mbank.zelenatabanka.net/otp-mastercopy-retail-app/en/my-accounts/transactions;selectedAccount=4cbb1546-ff9f-4045-8c5b-f446d459b75c/list",
     "usernameField": "Username",
     "fullName": "Stefan Mitov",
     "username": "mitoff11",

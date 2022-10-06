@@ -1,4 +1,4 @@
-Feature: List Current Accounts
+Feature: List Current Accounts P2-12
 
     As a user I want to see my current account list
 
