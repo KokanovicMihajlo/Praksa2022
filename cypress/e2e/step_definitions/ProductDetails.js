@@ -9,7 +9,7 @@ import {
     cy.visit(Cypress.env('transactionPage'));
   })
 
-  And('I click on a current account',()=>{
+  When('I click on a current account',()=>{
     cy.contains('BG23STSA93000005794456').click()
   })
 
