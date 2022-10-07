@@ -16,7 +16,13 @@ Then('I should see a list of Savings Accounts', ()=>{
   cy.contains('Savings Accounts').should('contain','Savings Accounts')
   cy.contains('Total').should('contain','Total')
   cy.get('[data-role=current-account-total-amount]').should('contain','535 469', ',', '48', 'BGN')
-})
+  cy.get('[data-role=card-title]').should('contain','Saving Account')
+  cy.get('[data-role=card-sub-title]').should('contain','BG24STSA93000027831286')
+  cy.get('[data-role=bb-amount-value__amount]').should('contain','270 473', ',', '47', 'BGN')
+  cy.get('[data-role=card-title]').should('contain','Saving Account')
+  cy.get('[data-role=card-sub-title]').should('contain','BG94STSA93000027831287')
+  cy.get('[data-role=bb-amount-value__amount]').should('contain','124 185', ',', '47', 'BGN')
+ })
 
 Then('I should see Saving Account details',()=>{
   cy.get('.bb-stack__item--fill').should('contain','Vasil Saving Account')
