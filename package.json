@@ -6,7 +6,8 @@
   "scripts": {
     "test": "cypress open",
     "start": "cypress run",
-    "dev": "cypress open --config-file dev.config.js"
+    "dev": "cypress open --config-file dev.config.js",
+    "qa": "cypress open --config-file qa.config.js"
   },
   "keywords": [
     "cypress"
