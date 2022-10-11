@@ -13,6 +13,8 @@ import {
     cy.get('[data-role=bb-amount-value]').should('contain','932', ',', '79', 'BGN')
     cy.get('[data-role=card-sub-title]').should('contain','110000000025092403')
     cy.get('[data-role=bb-amount-value]').should('contain','932', ',', '79', 'BGN')
+    cy.get('[data-role=card-title]').should('contain','Mortgage Loan')
+    cy.get('[data-role=card-sub-title]').should('contain','170000000026424417')
   })
 
   When('I click on a Loan',()=>{
