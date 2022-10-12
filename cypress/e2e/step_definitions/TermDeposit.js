@@ -6,10 +6,12 @@ import {
   } from "@badeball/cypress-cucumber-preprocessor"
 
   Then('I should see a list of Term Deposits',()=>{
+    cy.get('[class="bb-product-kind card card-body"]').eq(2).within(()=>{
     cy.get('[data-role="Term Deposits"]').should('contain','Term Deposits')
     cy.get('[data-role=current-account-total-amount]').should('contain','4 904', ',', '46', 'BGN')
-    cy.get('[data-role=card-title]').should('contain','Term Deposit')
-    cy.get('[data-role=bb-amount-value]').should('contain','2 452', ',', '23', 'BGN')
+    cy.get('[data-role=card-title]').eq(1).should('contain','Term Deposit')
+    cy.get('[data-role=bb-amount-value]').eq(1).should('contain','2 452', ',', '23', 'BGN')
+    })
   })
 
   When('I click on a Term Deposit',()=>{

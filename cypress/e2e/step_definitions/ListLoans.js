@@ -6,16 +6,19 @@ import {
   } from "@badeball/cypress-cucumber-preprocessor"
 
   Then('I should see a list of Loans',()=>{
+    cy.get('[class="bb-product-kind card card-body"]').eq(3).within(()=>{
     cy.get('[data-role=Loans]').should('contain','Loans')
     cy.get('[data-role=current-account-total-amount]').should('contain','2 798', ',', '37', 'BGN')
-    cy.get('[data-role=card-title]').should('contain','Personal loan')
+    cy.get('[data-role=card-title]').eq(0).should('contain','Personal loan')
     cy.get('[data-role=card-sub-title]').should('contain','110000000025092389')
-    cy.get('[data-role=bb-amount-value]').should('contain','932', ',', '79', 'BGN')
+    cy.get('[data-role=bb-amount-value]').eq(1).should('contain','932', ',', '79', 'BGN')
+    cy.get('[data-role=card-title]').eq(1).should('contain','Personal loan')
     cy.get('[data-role=card-sub-title]').should('contain','110000000025092403')
-    cy.get('[data-role=bb-amount-value]').should('contain','932', ',', '79', 'BGN')
+    cy.get('[data-role=bb-amount-value]').eq(2).should('contain','932', ',', '79', 'BGN')
     cy.get('[data-role=card-title]').should('contain','Mortgage Loan')
     cy.get('[data-role=card-sub-title]').should('contain','170000000026424417')
-    cy.get('[data-role=bb-amount-value]').should('contain','932', ',', '79', 'BGN')
+    cy.get('[data-role=bb-amount-value]').eq(3).should('contain','932', ',', '79', 'BGN')
+    })
   })
 
   When('I click on a Loan',()=>{
@@ -26,7 +29,7 @@ import {
     cy.contains('Details').should('contain','Details').click()
   })
 
-  Then('I should see Loan details', ()=>{
+  Then('I should see Personal Loan details', ()=>{
     cy.get('.bb-stack__item--fill').should('contain','Vasil Personal loan')
 
     cy.get('[class=card-header]').eq(0).should('contain','General')

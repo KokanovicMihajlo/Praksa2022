@@ -11,7 +11,7 @@ Feature: List Loans P2-48 and P2-49
     Scenario: As a user I want to see details of one of Loans
         When  I click on a Loan
         And   I click on Loan Details
-        Then  I should see Loan details
+        Then  I should see Personal Loan details
     
     Scenario: As a user I want to see details of Mortgage Loan
         When  I click on a Mortgage Loan
