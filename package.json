@@ -5,9 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "cypress open",
-    "start": "cypress run",
     "dev": "cypress open --config-file dev.config.js",
-    "qa": "cypress open --config-file qa.config.js"
+    "qa": "cypress open --config-file qa.config.js",
+    "start": "cypress run --config-file qa.config.js"
   },
   "keywords": [
     "cypress"

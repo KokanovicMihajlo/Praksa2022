@@ -13,6 +13,7 @@ module.exports = defineConfig({
     "transactionPage":"https://dev.mbank.zelenatabanka.net/otp-mastercopy-retail-app/en/my-accounts/transactions;selectedAccount=4cbb1546-ff9f-4045-8c5b-f446d459b75c/list",
     "usernameField": "Username",
     "fullName": "Stefan Mitov",
+    "fullName2": "Vasil Todorov Bonev",
     "username": "mitoff11",
     "username2": "bonev7",
     "password": "User_12345678!",
@@ -25,6 +26,7 @@ module.exports = defineConfig({
     "TDIBAN": "BG45STSA93000020739529",
     "LoanAccountNumber": "170000000027403684",
     "TDNumber": "060000000027483233",
+    "BonevCC": "BG38STSA93000017986116"
   },
   viewportWidth: 1280,
   viewportHeight: 720,

@@ -14,7 +14,7 @@ Given('I am loged in', ()=>{
 })
 
 When('I enter credentials and click Log In', ()=>{
-    cy.SimpleLogin()
+    cy.Login2()
 })
 
 Then('I am redirected to landing page', ()=>{

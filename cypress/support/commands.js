@@ -23,6 +23,6 @@ Cypress.Commands.add('SimpleLogin', () => {
 })
 
 Cypress.Commands.add('Logout', () => {
-    cy.contains(Cypress.env('fullName')).click({ force: true })
+    cy.contains(Cypress.env('fullName2')).click({ force: true })
     cy.contains('Log out').click()
 })
