@@ -30,7 +30,7 @@ import {
   })
 
   When('I click on clear Search',()=>{
-    cy.get('[class="bb-icon bb-icon-cancel bb-icon--sm"]').click()
+    cy.get('[name=cancel]').click()
   })
 
   Then('I should see all transactions',()=>{
