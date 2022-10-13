@@ -17,7 +17,8 @@ import {
   })
 
   When('I enter desired filter options',()=>{
-    cy.get('[class="input-group bb-input-datepicker"]').eq(0).type('29/08/2022')
+    cy.get('[data-role=toggle-calendar-button]').eq(0).click()
+    cy.SelectCalendar('29/08/2022')
     cy.get('[class="input-group bb-input-datepicker"]').eq(1).type('29/10/2022')
     cy.get('[data-role=dropdown]').eq(0).select('Debit')
     cy.get('[data-role=amount-from]').type('0')
