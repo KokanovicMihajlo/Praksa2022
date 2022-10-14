@@ -15,8 +15,7 @@ import {
 
   Then('I shoud see account transactions',()=>{
     cy.get('[data-role=product-number]').contains(Cypress.env('IBANBonev'))
-    cy.get('[data-role=bb-amount-value__amount]').should('contain','1 234', ',', '23', 'BGN')
-    cy.get('[class="bb-subheader"]').should('contain','Pending')
+    cy.get('[data-role=bb-amount-value__amount]').should('contain','209 279', ',', '80', 'BGN')
   })
 
   When('I click on details',()=>{
