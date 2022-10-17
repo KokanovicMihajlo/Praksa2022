@@ -15,6 +15,15 @@ Cypress.Commands.add('Login2', () => {
     cy.contains('Password').type(Cypress.env('password'))
     cy.get('#kc-login').click()
 })
+
+Cypress.Commands.add('Login3', () => {
+    cy.setCookie("bb-locale", "en")
+    cy.visit(Cypress.env('loginPage'));
+    cy.contains(Cypress.env('usernameField')).type(Cypress.env('username3'))
+    cy.contains('Password').type(Cypress.env('password'))
+    cy.get('#kc-login').click()
+})
+
 Cypress.Commands.add('SimpleLogin', () => {
     cy.intercept('POST', '**/api/access-control/client-api/v2/accessgroups/usercontext').as('me')
     cy.contains(Cypress.env('usernameField')).type(Cypress.env('username'))
