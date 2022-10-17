@@ -28,9 +28,9 @@ import {
     cy.get('.card-header').should('contain','General').eq(0)
     cy.get('[class=row]').should('contain','Account number').and('contain','Available').eq(0)
     cy.get('[data-role=current-account-iban]').contains(Cypress.env('IBANBonev'))
-    cy.get('[data-role=current-account-availableBalance]').should('contain','1 234', ',', '23', 'BGN')
+    cy.get('[data-role=current-account-availableBalance]').should('contain','209 279', ',', '80', 'BGN')
     cy.get('[class=row]').should('contain','Balance').and('contain','Blocked amount')
-    cy.get('[data-role=current-account-bookedBalance]').should('contain','2 452', ',', '23', 'BGN')
+    cy.get('[data-role=current-account-bookedBalance]').should('contain','898 698', ',', '89', 'BGN')
     cy.get('[data-role=current-account-blockedAmount]').should('contain','112', ',', '45', 'BGN')
 
     cy.get('.card-header').should('contain','Overdraft details').eq(1)

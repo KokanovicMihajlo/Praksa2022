@@ -8,14 +8,14 @@ import {
   Then('I should see a list of Term Deposits',()=>{
     cy.get('[class="bb-product-kind card card-body"]').eq(2).within(()=>{
     cy.get('[data-role="Term Deposits"]').should('contain','Term Deposits')
-    cy.get('[data-role=current-account-total-amount]').should('contain','4 904', ',', '46', 'BGN')
-    cy.get('[data-role=card-title]').eq(1).should('contain','Term Deposit')
-    cy.get('[data-role=bb-amount-value]').eq(1).should('contain','2 452', ',', '23', 'BGN')
+    cy.get('[data-role=current-account-total-amount]').should('contain','902 245', ',', '70', 'BGN')
+    cy.get('[data-role=card-title]').eq(0).should('contain','Vasil Term Deposit')
+    cy.get('[data-role=bb-amount-value]').eq(1).should('contain','428 366', ',', '82', 'BGN')
     })
   })
 
   When('I click on a Term Deposit',()=>{
-    cy.get('[data-role=card-title]').contains('Term Deposit').should('contain','Term Deposit').click()
+    cy.contains('Vasil Term Deposit').should('contain','Vasil Term Deposit').click()
   })
 
   When('I click on a Term Deposit Details',()=>{
@@ -31,7 +31,7 @@ import {
     .and('contain','Opening date').and('contain','Maturity date')
     .and('contain','Deposit current account').and('contain','Current account for the transfer of interest')
     cy.get('[data-role=deposit-account-number]').should('contain','060000000027831288')
-    cy.get('[data-role=deposit-availableBalance]').should('contain','2 452', ',', '23', 'BGN')
+    cy.get('[data-role=deposit-availableBalance]').should('contain','428 366', ',', '82', 'BGN')
     cy.get('[data-role=deposit-start-date]').should('contain','03.08.2022')
     cy.get('[data-role=deposit-maturity-date]').should('contain','03.08.2023')
     cy.get('[data-role=deposit-depositCurrentAccount]').should('contain','BG23STSA93000005794456')

@@ -16,6 +16,7 @@ module.exports = defineConfig({
     "fullName2": "Vasil Todorov Bonev",
     "username": "mitoff11",
     "username2": "bonev7",
+    "username3":"velev",
     "password": "User_12345678!",
     "legalEntity": "Stefan Mitov",
     "IBAN": "BG85STSA93000019265379",

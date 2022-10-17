@@ -8,9 +8,9 @@ import {
   Then('I should see a list of Credit Card Accounts',()=>{
     cy.get('[class="bb-product-kind card card-body"]').eq(4).within(()=>{
     cy.get('[data-role="Credit Card Accounts"]').should('contain','Credit Card Accounts')
-    cy.get('[data-role=current-account-total-amount]').should('contain','1 234', ',', '23', 'BGN')
+    cy.get('[data-role=current-account-total-amount]').should('contain','52 120', ',', '90', 'BGN')
     cy.get('[data-role=card-title]').should('contain','Credit Card Account')
-    cy.get('[data-role=bb-amount-value]').should('contain','1 234', ',', '23', 'BGN')
+    cy.get('[data-role=bb-amount-value]').should('contain','52 120', ',', '90', 'BGN')
     cy.get('[data-role=card-sub-title]').should('contain',(Cypress.env('BonevCC')))
     })
   })
@@ -31,8 +31,8 @@ import {
     cy.get('[class=row]').eq(0).should('contain','Account number').and('contain','Available')
     .and('contain','Balance').and('contain','Blocked amount')
     cy.get('[data-role=credit-card-account-iban]').should('contain',(Cypress.env('BonevCC')))
-    cy.get('[data-role=credit-card-account-availableBalance]').should('contain','1 234', ',', '23', 'BGN')
-    cy.get('[data-role=credit-card-account-bookedBalance]').should('contain','2 452', ',', '23', 'BGN')
+    cy.get('[data-role=credit-card-account-availableBalance]').should('contain','52 120', ',', '90', 'BGN')
+    cy.get('[data-role=credit-card-account-bookedBalance]').should('contain','642 959', ',', '66', 'BGN')
     cy.get('[data-role=credit-card-account-blockedAmount]').should('contain','112', ',', '45', 'BGN')
 
     cy.get('[class=card-header]').eq(1).should('contain','Credit limit details')
