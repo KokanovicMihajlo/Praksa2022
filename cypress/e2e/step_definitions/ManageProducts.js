@@ -47,11 +47,8 @@ import {
     cy.get('[data-role=inline-edit-btn]').eq(0).click()
     cy.get('[data-role=input]').clear().type('Vasil Current Account')
     cy.get('[data-role=inline-edit-accept]').click()
-  })
-
-  When('I reload page',()=>{
     cy.reload()
-  }) 
+  })
   
   Then('I should see original Account name',()=>{
     cy.get('[data-role=inline-edit-text]').should('contain','Vasil Current Account')
@@ -68,6 +65,7 @@ import {
 
   When('I click back on visibility switch',()=>{
     cy.get('[class=bb-switch]').eq(0).click()
+    cy.reload()
   })
 
   Then('I should be able to se given account',()=>{

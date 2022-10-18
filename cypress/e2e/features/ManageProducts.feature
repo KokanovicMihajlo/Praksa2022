@@ -16,7 +16,6 @@ Feature: Manage Products P2-94
         Then  I should be able to see changes applied
         When  I click on Manage Products
         And   I rename Account to original name
-        And   I reload page
         Then  I should see original Account name
 
     Scenario: As a user I want to change account visibility
@@ -25,5 +24,4 @@ Feature: Manage Products P2-94
         Then  I should not be able to se given account
         When  I click on Manage Products
         And   I click back on visibility switch
-        And   I reload page
         Then  I should be able to se given account
