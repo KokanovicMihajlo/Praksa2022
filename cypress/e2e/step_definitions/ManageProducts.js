@@ -59,7 +59,7 @@ import {
     cy.get('[class=bb-switch]').eq(0).click()
   })
 
-  Then('I should not be able to se given account',()=>{
+  Then('I should not be able to see given account',()=>{
     cy.contains('BG08STSA93000027831283').should('not.exist')
   })
 
@@ -68,6 +68,6 @@ import {
     cy.reload()
   })
 
-  Then('I should be able to se given account',()=>{
+  Then('I should be able to see given account',()=>{
     cy.get('[data-role=product-number]').should('contain','BG08STSA93000027831283').should('be.visible')
   })

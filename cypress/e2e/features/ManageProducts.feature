@@ -21,7 +21,7 @@ Feature: Manage Products P2-94
     Scenario: As a user I want to change account visibility
         When  I click on visibility switch
         And   I navigate back to My products page
-        Then  I should not be able to se given account
+        Then  I should not be able to see given account
         When  I click on Manage Products
         And   I click back on visibility switch
-        Then  I should be able to se given account
+        Then  I should be able to see given account
