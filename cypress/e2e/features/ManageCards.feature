@@ -14,4 +14,4 @@ Feature: Manage Cards P2-99
         Then  I should see Card Details
 
     Scenario: As a user I want to edit Card details
-        When  I edit Card details
+        Then  I edit Card details

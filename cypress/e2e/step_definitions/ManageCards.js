@@ -75,7 +75,7 @@ Then('I should see Card Details',()=>{
   .and('contain','Max:','10 000','BGN')
 })
 
-When('I edit Card details',()=>{
+Then('I edit Card details',()=>{
   cy.get('[class="bb-payment-card bb-payment-card-type-visa-debit"]').eq(0).click()
   cy.get('[data-role=inline-edit-btn]').eq(0).click()
   cy.get('[data-role=inline-edit-input]').clear().type('2000')
